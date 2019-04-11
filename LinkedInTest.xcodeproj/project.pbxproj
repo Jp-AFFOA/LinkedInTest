@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192864E47E0DF27219B61606 /* Pods_LinkedInTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C398A1CD02C2944D0472A0 /* Pods_LinkedInTest.framework */; };
 		D336F4CD225FE14A00C449B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D336F4CC225FE14A00C449B4 /* AppDelegate.swift */; };
 		D336F4CF225FE14A00C449B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D336F4CE225FE14A00C449B4 /* ViewController.swift */; };
 		D336F4D2225FE14A00C449B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D336F4D0225FE14A00C449B4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38C398A1CD02C2944D0472A0 /* Pods_LinkedInTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedInTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D336F4C9225FE14A00C449B4 /* LinkedInTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedInTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D336F4CC225FE14A00C449B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D336F4CE225FE14A00C449B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		D336F4D3225FE14B00C449B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D336F4D6225FE14B00C449B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D336F4D8225FE14B00C449B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.debug.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.release.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192864E47E0DF27219B61606 /* Pods_LinkedInTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393826E43753EFCE247B3045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38C398A1CD02C2944D0472A0 /* Pods_LinkedInTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		669142B163AD1C24DBEC5880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */,
+				F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D336F4C0225FE14A00C449B4 = {
 			isa = PBXGroup;
 			children = (
 				D336F4CB225FE14A00C449B4 /* LinkedInTest */,
 				D336F4CA225FE14A00C449B4 /* Products */,
+				669142B163AD1C24DBEC5880 /* Pods */,
+				393826E43753EFCE247B3045 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D336F4DB225FE14B00C449B4 /* Build configuration list for PBXNativeTarget "LinkedInTest" */;
 			buildPhases = (
+				0F521EFA1D86C507993672FB /* [CP] Check Pods Manifest.lock */,
 				D336F4C5225FE14A00C449B4 /* Sources */,
 				D336F4C6225FE14A00C449B4 /* Frameworks */,
 				D336F4C7225FE14A00C449B4 /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F521EFA1D86C507993672FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkedInTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D336F4C5225FE14A00C449B4 /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		D336F4DC225FE14B00C449B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +350,7 @@
 		};
 		D336F4DD225FE14B00C449B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
