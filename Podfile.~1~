@@ -6,6 +6,5 @@ target 'LinkedInTest' do
   use_frameworks!
 
   # Pods for LinkedInTest
-  pod 'OpenAuth'
 
 end

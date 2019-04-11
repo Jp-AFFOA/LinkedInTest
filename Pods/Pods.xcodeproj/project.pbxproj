@@ -6,44 +6,105 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		74AB94D84A58921AD822D775A7DA12C8 /* OpenAuth */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 07FCD0DEAA64D2BE9CA056D4A2D4EDB1 /* Build configuration list for PBXAggregateTarget "OpenAuth" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = OpenAuth;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		81BFC966E1A449529ADE20CD1FD23663 /* Pods-LinkedInTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */; };
-		B66310214CBD65FAFDB2EE74B1B9D44B /* Pods-LinkedInTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E23A8BAD4B4D32BF795796A5C0234D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		11B73489CCE42ACF29D11DEF685445E9 /* Pods-LinkedInTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */; };
+		CD839E68DF86790687BF71FAD32D85B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		EB9D8BAFB80536868D89A2E36415EEE4 /* Pods-LinkedInTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		98E4D498A5F30077DBA4BF3D57E80792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74AB94D84A58921AD822D775A7DA12C8;
+			remoteInfo = OpenAuth;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		45CAAB781FF3A7B19771953A569AE21D /* Pods-LinkedInTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-Info.plist"; sourceTree = "<group>"; };
-		482D17D21AADFF7C2E3EB17A0D0CC0A0 /* Pods-LinkedInTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedInTest-dummy.m"; sourceTree = "<group>"; };
-		50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
+		0426786985A41A771D8926B763CD0B00 /* OpenAuth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenAuth.xcconfig; sourceTree = "<group>"; };
+		1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
+		26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedInTest-dummy.m"; sourceTree = "<group>"; };
+		3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkedInTest-umbrella.h"; sourceTree = "<group>"; };
+		38DD25D3AB7577293F81F91786B9DC5F /* Pods-LinkedInTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedInTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41AD99B4969BCADE4B8B0181849DCAEF /* Pods-LinkedInTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LinkedInTest.modulemap"; sourceTree = "<group>"; };
 		58AB433D1A1FF34D675653B9FFD3DC00 /* Pods_LinkedInTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinkedInTest.framework; path = "Pods-LinkedInTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78320CBA9A9F4B5C2275D8AFE2DD406A /* Pods-LinkedInTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LinkedInTest.modulemap"; sourceTree = "<group>"; };
+		69C4CAD22C7FBA6C938FEC2BF5BB36A7 /* Pods-LinkedInTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C27928C31B55B700163F46E737D0037 /* Pods-LinkedInTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkedInTest-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACECBEDABFF80BD9FC16278679A343B0 /* Pods-LinkedInTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-Info.plist"; sourceTree = "<group>"; };
+		B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkedInTest-umbrella.h"; sourceTree = "<group>"; };
-		D8C78E97043DCF5B09F892EFE954399C /* Pods-LinkedInTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedInTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
+		EF7F5C217B9319DDA6FAA5F7129EED06 /* OpenAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAuth.framework; path = OpenAuth/OpenAuth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4EFB753810D5F0A37CA557435E19395E /* Frameworks */ = {
+		964FF3C69546C2E08DFCFC5A774AE049 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23A8BAD4B4D32BF795796A5C0234D8A /* Foundation.framework in Frameworks */,
+				CD839E68DF86790687BF71FAD32D85B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38978AF1FD3AFBDBCD6AC3CDEB8BCB58 /* Targets Support Files */ = {
+		00646C332D12338076F765C99E2E1ACF /* OpenAuth */ = {
 			isa = PBXGroup;
 			children = (
-				9E7A1801B6193DA0578F59CF400ABB01 /* Pods-LinkedInTest */,
+				DF1A7E7CE376721A36106D093A79C213 /* Frameworks */,
+				585AECD71168A1800B5E43723EFE6B1A /* Support Files */,
+			);
+			name = OpenAuth;
+			path = OpenAuth;
+			sourceTree = "<group>";
+		};
+		360FF8648837B261ABC195A9E1864E88 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54A2B03F85EB0442A6DDC6FB5B853CBA /* Pods-LinkedInTest */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54A2B03F85EB0442A6DDC6FB5B853CBA /* Pods-LinkedInTest */ = {
+			isa = PBXGroup;
+			children = (
+				41AD99B4969BCADE4B8B0181849DCAEF /* Pods-LinkedInTest.modulemap */,
+				38DD25D3AB7577293F81F91786B9DC5F /* Pods-LinkedInTest-acknowledgements.markdown */,
+				69C4CAD22C7FBA6C938FEC2BF5BB36A7 /* Pods-LinkedInTest-acknowledgements.plist */,
+				26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */,
+				6C27928C31B55B700163F46E737D0037 /* Pods-LinkedInTest-frameworks.sh */,
+				ACECBEDABFF80BD9FC16278679A343B0 /* Pods-LinkedInTest-Info.plist */,
+				3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */,
+				1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */,
+				B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */,
+			);
+			name = "Pods-LinkedInTest";
+			path = "Target Support Files/Pods-LinkedInTest";
+			sourceTree = "<group>";
+		};
+		585AECD71168A1800B5E43723EFE6B1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0426786985A41A771D8926B763CD0B00 /* OpenAuth.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenAuth";
 			sourceTree = "<group>";
 		};
 		6F93F2855310A974E4CF1054A4FD37C7 /* Products */ = {
@@ -62,20 +123,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9E7A1801B6193DA0578F59CF400ABB01 /* Pods-LinkedInTest */ = {
+		A2CDDBB28C232795E5EABBAB3118B98A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78320CBA9A9F4B5C2275D8AFE2DD406A /* Pods-LinkedInTest.modulemap */,
-				D8C78E97043DCF5B09F892EFE954399C /* Pods-LinkedInTest-acknowledgements.markdown */,
-				482D17D21AADFF7C2E3EB17A0D0CC0A0 /* Pods-LinkedInTest-acknowledgements.plist */,
-				4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */,
-				45CAAB781FF3A7B19771953A569AE21D /* Pods-LinkedInTest-Info.plist */,
-				D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */,
-				50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */,
-				FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */,
+				00646C332D12338076F765C99E2E1ACF /* OpenAuth */,
 			);
-			name = "Pods-LinkedInTest";
-			path = "Target Support Files/Pods-LinkedInTest";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -83,8 +136,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A2CDDBB28C232795E5EABBAB3118B98A /* Pods */,
 				6F93F2855310A974E4CF1054A4FD37C7 /* Products */,
-				38978AF1FD3AFBDBCD6AC3CDEB8BCB58 /* Targets Support Files */,
+				360FF8648837B261ABC195A9E1864E88 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,32 +150,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF1A7E7CE376721A36106D093A79C213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F5C217B9319DDA6FAA5F7129EED06 /* OpenAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DD8843E52628B6971BE54E1B32752BAF /* Headers */ = {
+		82315EFB79514251D6D971EB7C54B7D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66310214CBD65FAFDB2EE74B1B9D44B /* Pods-LinkedInTest-umbrella.h in Headers */,
+				EB9D8BAFB80536868D89A2E36415EEE4 /* Pods-LinkedInTest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5BB24CC8FE4A433DD32A609E6E9B6753 /* Pods-LinkedInTest */ = {
+		D2CBAA9AC17A63C64808E9F7492954BE /* Pods-LinkedInTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 926BDBB7B682BD1AEFE044E77FFF350D /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */;
+			buildConfigurationList = 9091474D20B1669E6BEC7E92445B50B0 /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */;
 			buildPhases = (
-				DD8843E52628B6971BE54E1B32752BAF /* Headers */,
-				78A44A45E252BD89DA4BCA8FC6A7BD49 /* Sources */,
-				4EFB753810D5F0A37CA557435E19395E /* Frameworks */,
-				C396CEBFBD1315268C363712CFC8BBB7 /* Resources */,
+				82315EFB79514251D6D971EB7C54B7D6 /* Headers */,
+				06ACAAD1DD08260E61A872B94B161E26 /* Sources */,
+				964FF3C69546C2E08DFCFC5A774AE049 /* Frameworks */,
+				05F787C28526E05DE76F1E698EF8B02E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA3D4CC5FB6CCAAC26EF1FFD963D7D5B /* PBXTargetDependency */,
 			);
 			name = "Pods-LinkedInTest";
 			productName = "Pods-LinkedInTest";
@@ -149,13 +212,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BB24CC8FE4A433DD32A609E6E9B6753 /* Pods-LinkedInTest */,
+				74AB94D84A58921AD822D775A7DA12C8 /* OpenAuth */,
+				D2CBAA9AC17A63C64808E9F7492954BE /* Pods-LinkedInTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C396CEBFBD1315268C363712CFC8BBB7 /* Resources */ = {
+		05F787C28526E05DE76F1E698EF8B02E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,20 +229,100 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		78A44A45E252BD89DA4BCA8FC6A7BD49 /* Sources */ = {
+		06ACAAD1DD08260E61A872B94B161E26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BFC966E1A449529ADE20CD1FD23663 /* Pods-LinkedInTest-dummy.m in Sources */,
+				11B73489CCE42ACF29D11DEF685445E9 /* Pods-LinkedInTest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AA3D4CC5FB6CCAAC26EF1FFD963D7D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenAuth;
+			target = 74AB94D84A58921AD822D775A7DA12C8 /* OpenAuth */;
+			targetProxy = 98E4D498A5F30077DBA4BF3D57E80792 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4CF7AC703D5FDD8AF358AF441A29960A /* Release */ = {
+		33A5C527CE4D0C9526B2FD9303B58297 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */;
+			baseConfigurationReference = 1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34A1772AB701CAE6DB1E5CBDFFE6E246 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0426786985A41A771D8926B763CD0B00 /* OpenAuth.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6166B4447D7A3E156541F5D0FD2EC059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0426786985A41A771D8926B763CD0B00 /* OpenAuth.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6808E3076DD452790ADE0815AC7E037A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -214,44 +358,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8666C6540FCCF7142ADF1B1BEEAA6F96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -380,6 +486,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07FCD0DEAA64D2BE9CA056D4A2D4EDB1 /* Build configuration list for PBXAggregateTarget "OpenAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34A1772AB701CAE6DB1E5CBDFFE6E246 /* Debug */,
+				6166B4447D7A3E156541F5D0FD2EC059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -389,11 +504,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		926BDBB7B682BD1AEFE044E77FFF350D /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */ = {
+		9091474D20B1669E6BEC7E92445B50B0 /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8666C6540FCCF7142ADF1B1BEEAA6F96 /* Debug */,
-				4CF7AC703D5FDD8AF358AF441A29960A /* Release */,
+				33A5C527CE4D0C9526B2FD9303B58297 /* Debug */,
+				6808E3076DD452790ADE0815AC7E037A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

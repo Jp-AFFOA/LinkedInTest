@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: b888cfa717671bdc8ad24610bc806649fd203bdc
+PODS:
+  - OpenAuth (1.1.3)
+
+DEPENDENCIES:
+  - OpenAuth
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenAuth
+
+SPEC CHECKSUMS:
+  OpenAuth: 40831df305868a6382def9bca4c1437c3130808f
+
+PODFILE CHECKSUM: 336625638937403c3666fea0e0245931cc7c6595
 
 COCOAPODS: 1.6.1
