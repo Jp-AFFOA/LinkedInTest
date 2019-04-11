@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33BE2696881F10797430DAD840F12E6E"
-               BuildableName = "Pods_LinkedInTest.framework"
-               BlueprintName = "Pods-LinkedInTest"
+               BlueprintIdentifier = "97DDEE5A1EB31FDE74A84A2AE12EFAC8"
+               BuildableName = "p2_OAuth2.framework"
+               BlueprintName = "p2.OAuth2"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "33BE2696881F10797430DAD840F12E6E"
-            BuildableName = "Pods_LinkedInTest.framework"
-            BlueprintName = "Pods-LinkedInTest"
+            BlueprintIdentifier = "97DDEE5A1EB31FDE74A84A2AE12EFAC8"
+            BuildableName = "p2_OAuth2.framework"
+            BlueprintName = "p2.OAuth2"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

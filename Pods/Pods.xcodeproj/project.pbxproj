@@ -7,125 +7,324 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81BFC966E1A449529ADE20CD1FD23663 /* Pods-LinkedInTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */; };
-		B66310214CBD65FAFDB2EE74B1B9D44B /* Pods-LinkedInTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E23A8BAD4B4D32BF795796A5C0234D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		0DB19FFD0E012313DD4C5AAF7062E9EA /* OAuth2AuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E66C0BBAF08ADA852BB8EBA43A50C /* OAuth2AuthConfig.swift */; };
+		104C0C323984E398CA2C99A1F4764840 /* OAuth2DynReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0022468C1F6991E061C5356F11E0C50D /* OAuth2DynReg.swift */; };
+		1E6399CF47CDA1BB4201B43B4260EEE5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1DBA4BEF549DC1A178F03A8D9ACE2A /* SafariServices.framework */; };
+		25EA4DE129C28557BC5C4E1B35248C43 /* OAuth2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8235B6C7853BC1748125524D05304AF /* OAuth2Response.swift */; };
+		27BE287CFACBB30393DCE7144B09F5DE /* OAuth2ImplicitGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471A9F529F44287B2AC0DFD863868B2E /* OAuth2ImplicitGrant.swift */; };
+		2C2F3D81B5A19BF4D9398EB4D14554E0 /* OAuth2ClientCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CCC0B4D7D0A9EAC47D1C2E7AE49DB1 /* OAuth2ClientCredentials.swift */; };
+		30126A4CB48E290DFB2740F3FC65EDB2 /* OAuth2CodeGrantBasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BA28DE66F5FAA76A9F975027FDD122 /* OAuth2CodeGrantBasicAuth.swift */; };
+		366B55484B806C602404D09F6BBDEE22 /* OAuth2Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059AA98378056BAC79D6015F3E898B9B /* OAuth2Base.swift */; };
+		3ABBB12BAC3F7BE81DA7C13C2555FED4 /* OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3257CECF9FECF5A37A2A42AB3A38D51B /* OAuth2.swift */; };
+		451DD2451949A63F2362E963E0D674F4 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939BA953115327FB1A9C5A3F364FFB6 /* Keychain.swift */; };
+		598243B4413B2DA6278DD6D3FCD41A2A /* p2.OAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF169418E7F278F2FF055FD5B435EC66 /* p2.OAuth2-dummy.m */; };
+		5BBEF2A510E52F3D1B3B981BAD620CF9 /* Pods-LinkedInTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */; };
+		6267B2DF96FA4467E4780157F6FBB8D8 /* OAuth2ImplicitGrantWithQueryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FFF01A19FD5EE705D32D503F79671 /* OAuth2ImplicitGrantWithQueryParams.swift */; };
+		6E824F5EAA97629598899D48E72635F1 /* OAuth2CodeGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF89395E1F042D20B91335E9997A5FF /* OAuth2CodeGrant.swift */; };
+		7B2FB63C83EB5CC40411858E19A695B3 /* OAuth2CustomAuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C41A2E7CB7DCC4401EC7834A7B76A /* OAuth2CustomAuthorizerUI.swift */; };
+		80A74090DE0BC1BA68F1801E82AEC94E /* OAuth2DataLoaderSessionTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62782A697A70FB8536F0618760895595 /* OAuth2DataLoaderSessionTaskDelegate.swift */; };
+		83D538E0789E4D642E165D2A1DB8D6C4 /* OAuth2CodeGrantAzure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4847D45F646AB050411C26602C31857A /* OAuth2CodeGrantAzure.swift */; };
+		8B497C4136C2FC6CD940D12DF9189816 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5EAFEC24AAC5F3EA791926C15F57A0 /* extensions.swift */; };
+		8E73413A954925DCF918AA838E184246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F296C01FFACA80FDE3AE236F23425680 /* Foundation.framework */; };
+		9426766C8E638799A89F313267ECCDD9 /* OAuth2Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23A279A596C62BC25DDECE8BE7670A6 /* OAuth2Logger.swift */; };
+		988104325C90C4F4D2AD387418C68DFA /* Pods-LinkedInTest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98861163901029F9D3246570B1513D83 /* OAuth2CodeGrantFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCB36E7DEA2E66449B98DA6E826C82 /* OAuth2CodeGrantFacebook.swift */; };
+		9DE41D2C67FF2ABA9B8E40D63B37A148 /* OAuth2Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811008C8DF316096FE014E45CC16D61C /* OAuth2Requestable.swift */; };
+		9F8C523468EF2F7399DEA7FB743A89F4 /* OAuth2PasswordGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D70E3A0BDBC7F0AB5E1844068824786 /* OAuth2PasswordGrant.swift */; };
+		A48856A6243DD3143874ABF8B7F76BD3 /* OAuth2DebugURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5B180C627A307263A33CB95E96CC0 /* OAuth2DebugURLSessionDelegate.swift */; };
+		B09FE0C8D40B7A5C7001E5F45D4BAE67 /* OAuth2Authorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1196769267E301F10F264013593CB /* OAuth2Authorizer+iOS.swift */; };
+		B4A089DAD28DB57F48EAB7FE04958A45 /* OAuth2Securable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C24D728DD72D7C123CC615ECE89ADE /* OAuth2Securable.swift */; };
+		BE80786903DB42E55CEE4EE57661778B /* OAuth2DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A4C14AE590F2111FF5179D5E7F9609 /* OAuth2DataLoader.swift */; };
+		C885BA62674BEA5A75B883BA88E04546 /* p2.OAuth2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D71B27287CF54EAF2DB408351B41CD /* p2.OAuth2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C94A139FACE1ED6CE637E9BB57D6CC04 /* OAuth2CodeGrantNoTokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C636DB7F02755ED42EF4DC29E7A34F /* OAuth2CodeGrantNoTokenType.swift */; };
+		CD06C250DFC66E9BE6258D4E10A09E88 /* OAuth2ClientCredentialsReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E188B1F466C93168908501FCF92789B4 /* OAuth2ClientCredentialsReddit.swift */; };
+		CD534A6BD70FE521A73A130076773D41 /* OAuth2ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7927DDB2AB71D75521A70EF1FD2F8D1 /* OAuth2ClientConfig.swift */; };
+		D23C19377FDC8BB636701E84A7BA15C5 /* OAuth2AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3EE7F749D753366595D4DA7BA19D7 /* OAuth2AuthRequest.swift */; };
+		D5D0F2D2EF92951237989FE0A12D5079 /* OAuth2Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032D3CE990B4C8A806083332B091BCB /* OAuth2Error.swift */; };
+		D6BCB7C5BB93202B685AECEDA665F1D2 /* OAuth2DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0DD63CFB70156DFAE23F5D6D9D6D45 /* OAuth2DataRequest.swift */; };
+		D7BC341F969470869BEE61756FA642F3 /* OAuth2RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BD224FEB470A3AD4D499404D621D7 /* OAuth2RequestPerformer.swift */; };
+		DCB37258AF28EE946EBC17E3C8CBEEA8 /* OAuth2AuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7416BC51ED22FEDEDDEE58FEA79262EE /* OAuth2AuthorizerUI.swift */; };
+		DED135B1C0376A1F1F88118D5F7E0FD2 /* OAuth2CodeGrantLinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72F1A82E058CA931641921F12C3F837 /* OAuth2CodeGrantLinkedIn.swift */; };
+		E362CD4203E45B49103608DCA3A90D9C /* OAuth2KeychainAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E046BE5ACB99BF3C03BB4202C299B0 /* OAuth2KeychainAccount.swift */; };
+		E9A7FB86A4EC39F9FEAD8683527730F1 /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB6C20BA63C0DEFFE734CAD47F4EF58 /* OAuth2WebViewController.swift */; };
+		EB31BACB499B0700DAD44041124AD116 /* OAuth2CustomAuthorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43627D6CA44CD610CC98E3B7086772A6 /* OAuth2CustomAuthorizer+iOS.swift */; };
+		EE220474909A61EAB8D3EB334ECAFB19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F296C01FFACA80FDE3AE236F23425680 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		75CB2ED43745B6F6EF1333086F3A0694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97DDEE5A1EB31FDE74A84A2AE12EFAC8;
+			remoteInfo = p2.OAuth2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		45CAAB781FF3A7B19771953A569AE21D /* Pods-LinkedInTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-Info.plist"; sourceTree = "<group>"; };
-		482D17D21AADFF7C2E3EB17A0D0CC0A0 /* Pods-LinkedInTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedInTest-dummy.m"; sourceTree = "<group>"; };
-		50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
-		58AB433D1A1FF34D675653B9FFD3DC00 /* Pods_LinkedInTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinkedInTest.framework; path = "Pods-LinkedInTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78320CBA9A9F4B5C2275D8AFE2DD406A /* Pods-LinkedInTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LinkedInTest.modulemap"; sourceTree = "<group>"; };
+		0022468C1F6991E061C5356F11E0C50D /* OAuth2DynReg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DynReg.swift; path = Sources/Flows/OAuth2DynReg.swift; sourceTree = "<group>"; };
+		059AA98378056BAC79D6015F3E898B9B /* OAuth2Base.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Base.swift; path = Sources/Base/OAuth2Base.swift; sourceTree = "<group>"; };
+		0D70E3A0BDBC7F0AB5E1844068824786 /* OAuth2PasswordGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2PasswordGrant.swift; path = Sources/Flows/OAuth2PasswordGrant.swift; sourceTree = "<group>"; };
+		16A4C14AE590F2111FF5179D5E7F9609 /* OAuth2DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataLoader.swift; path = Sources/DataLoader/OAuth2DataLoader.swift; sourceTree = "<group>"; };
+		1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
+		26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedInTest-dummy.m"; sourceTree = "<group>"; };
+		2AF89395E1F042D20B91335E9997A5FF /* OAuth2CodeGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrant.swift; path = Sources/Flows/OAuth2CodeGrant.swift; sourceTree = "<group>"; };
+		3257CECF9FECF5A37A2A42AB3A38D51B /* OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2.swift; path = Sources/Flows/OAuth2.swift; sourceTree = "<group>"; };
+		3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkedInTest-umbrella.h"; sourceTree = "<group>"; };
+		38DD25D3AB7577293F81F91786B9DC5F /* Pods-LinkedInTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedInTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41AD99B4969BCADE4B8B0181849DCAEF /* Pods-LinkedInTest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LinkedInTest.modulemap"; sourceTree = "<group>"; };
+		43627D6CA44CD610CC98E3B7086772A6 /* OAuth2CustomAuthorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2CustomAuthorizer+iOS.swift"; path = "Sources/iOS/OAuth2CustomAuthorizer+iOS.swift"; sourceTree = "<group>"; };
+		471A9F529F44287B2AC0DFD863868B2E /* OAuth2ImplicitGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ImplicitGrant.swift; path = Sources/Flows/OAuth2ImplicitGrant.swift; sourceTree = "<group>"; };
+		4847D45F646AB050411C26602C31857A /* OAuth2CodeGrantAzure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantAzure.swift; path = Sources/Flows/OAuth2CodeGrantAzure.swift; sourceTree = "<group>"; };
+		490C41A2E7CB7DCC4401EC7834A7B76A /* OAuth2CustomAuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CustomAuthorizerUI.swift; path = Sources/Base/OAuth2CustomAuthorizerUI.swift; sourceTree = "<group>"; };
+		4D7BF627F31F4D43E065553229C7AC46 /* p2.OAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = p2.OAuth2.modulemap; sourceTree = "<group>"; };
+		52CCC0B4D7D0A9EAC47D1C2E7AE49DB1 /* OAuth2ClientCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentials.swift; path = Sources/Flows/OAuth2ClientCredentials.swift; sourceTree = "<group>"; };
+		62782A697A70FB8536F0618760895595 /* OAuth2DataLoaderSessionTaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataLoaderSessionTaskDelegate.swift; path = Sources/DataLoader/OAuth2DataLoaderSessionTaskDelegate.swift; sourceTree = "<group>"; };
+		69C4CAD22C7FBA6C938FEC2BF5BB36A7 /* Pods-LinkedInTest-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C27928C31B55B700163F46E737D0037 /* Pods-LinkedInTest-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinkedInTest-frameworks.sh"; sourceTree = "<group>"; };
+		72E5B180C627A307263A33CB95E96CC0 /* OAuth2DebugURLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DebugURLSessionDelegate.swift; path = Sources/Base/OAuth2DebugURLSessionDelegate.swift; sourceTree = "<group>"; };
+		7416BC51ED22FEDEDDEE58FEA79262EE /* OAuth2AuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthorizerUI.swift; path = Sources/Base/OAuth2AuthorizerUI.swift; sourceTree = "<group>"; };
+		7F0DD63CFB70156DFAE23F5D6D9D6D45 /* OAuth2DataRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataRequest.swift; path = Sources/DataLoader/OAuth2DataRequest.swift; sourceTree = "<group>"; };
+		8032D3CE990B4C8A806083332B091BCB /* OAuth2Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Error.swift; path = Sources/Base/OAuth2Error.swift; sourceTree = "<group>"; };
+		811008C8DF316096FE014E45CC16D61C /* OAuth2Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Requestable.swift; path = Sources/Base/OAuth2Requestable.swift; sourceTree = "<group>"; };
+		821FFF01A19FD5EE705D32D503F79671 /* OAuth2ImplicitGrantWithQueryParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ImplicitGrantWithQueryParams.swift; path = Sources/Flows/OAuth2ImplicitGrantWithQueryParams.swift; sourceTree = "<group>"; };
+		89D71B27287CF54EAF2DB408351B41CD /* p2.OAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "p2.OAuth2-umbrella.h"; sourceTree = "<group>"; };
+		92BA28DE66F5FAA76A9F975027FDD122 /* OAuth2CodeGrantBasicAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantBasicAuth.swift; path = Sources/Flows/OAuth2CodeGrantBasicAuth.swift; sourceTree = "<group>"; };
+		98E046BE5ACB99BF3C03BB4202C299B0 /* OAuth2KeychainAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2KeychainAccount.swift; path = Sources/Base/OAuth2KeychainAccount.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinkedInTest-umbrella.h"; sourceTree = "<group>"; };
-		D8C78E97043DCF5B09F892EFE954399C /* Pods-LinkedInTest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedInTest-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
+		A3CCB36E7DEA2E66449B98DA6E826C82 /* OAuth2CodeGrantFacebook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantFacebook.swift; path = Sources/Flows/OAuth2CodeGrantFacebook.swift; sourceTree = "<group>"; };
+		A994D4C663ADA1B7E4DC133177C28996 /* Pods_LinkedInTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinkedInTest.framework; path = "Pods-LinkedInTest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACECBEDABFF80BD9FC16278679A343B0 /* Pods-LinkedInTest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedInTest-Info.plist"; sourceTree = "<group>"; };
+		AF169418E7F278F2FF055FD5B435EC66 /* p2.OAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "p2.OAuth2-dummy.m"; sourceTree = "<group>"; };
+		B443B984D969C057688DE7878EB7AC35 /* p2.OAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = p2.OAuth2.xcconfig; sourceTree = "<group>"; };
+		B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
+		B4C636DB7F02755ED42EF4DC29E7A34F /* OAuth2CodeGrantNoTokenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantNoTokenType.swift; path = Sources/Flows/OAuth2CodeGrantNoTokenType.swift; sourceTree = "<group>"; };
+		B939BA953115327FB1A9C5A3F364FFB6 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = SwiftKeychain/Keychain/Keychain.swift; sourceTree = "<group>"; };
+		B9D1196769267E301F10F264013593CB /* OAuth2Authorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2Authorizer+iOS.swift"; path = "Sources/iOS/OAuth2Authorizer+iOS.swift"; sourceTree = "<group>"; };
+		BADBC5B6B57434966B66F95D1829F8F2 /* p2.OAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "p2.OAuth2-prefix.pch"; sourceTree = "<group>"; };
+		CC1DBA4BEF549DC1A178F03A8D9ACE2A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		CDB6C20BA63C0DEFFE734CAD47F4EF58 /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2WebViewController.swift; path = Sources/iOS/OAuth2WebViewController.swift; sourceTree = "<group>"; };
+		D23A279A596C62BC25DDECE8BE7670A6 /* OAuth2Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Logger.swift; path = Sources/Base/OAuth2Logger.swift; sourceTree = "<group>"; };
+		D3C24D728DD72D7C123CC615ECE89ADE /* OAuth2Securable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Securable.swift; path = Sources/Base/OAuth2Securable.swift; sourceTree = "<group>"; };
+		D72F1A82E058CA931641921F12C3F837 /* OAuth2CodeGrantLinkedIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantLinkedIn.swift; path = Sources/Flows/OAuth2CodeGrantLinkedIn.swift; sourceTree = "<group>"; };
+		D85E66C0BBAF08ADA852BB8EBA43A50C /* OAuth2AuthConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthConfig.swift; path = Sources/Base/OAuth2AuthConfig.swift; sourceTree = "<group>"; };
+		DF4185BE439AF8AAFACB66DF59414D3E /* p2.OAuth2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "p2.OAuth2-Info.plist"; sourceTree = "<group>"; };
+		DF5EAFEC24AAC5F3EA791926C15F57A0 /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = Sources/Base/extensions.swift; sourceTree = "<group>"; };
+		E188B1F466C93168908501FCF92789B4 /* OAuth2ClientCredentialsReddit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentialsReddit.swift; path = Sources/Flows/OAuth2ClientCredentialsReddit.swift; sourceTree = "<group>"; };
+		E8235B6C7853BC1748125524D05304AF /* OAuth2Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Response.swift; path = Sources/Base/OAuth2Response.swift; sourceTree = "<group>"; };
+		E8C3EE7F749D753366595D4DA7BA19D7 /* OAuth2AuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthRequest.swift; path = Sources/Base/OAuth2AuthRequest.swift; sourceTree = "<group>"; };
+		EE5BD224FEB470A3AD4D499404D621D7 /* OAuth2RequestPerformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2RequestPerformer.swift; path = Sources/Base/OAuth2RequestPerformer.swift; sourceTree = "<group>"; };
+		F296C01FFACA80FDE3AE236F23425680 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F7927DDB2AB71D75521A70EF1FD2F8D1 /* OAuth2ClientConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientConfig.swift; path = Sources/Base/OAuth2ClientConfig.swift; sourceTree = "<group>"; };
+		FE408F721C71F1A18A29E3DE67F8C285 /* p2_OAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = p2_OAuth2.framework; path = p2.OAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4EFB753810D5F0A37CA557435E19395E /* Frameworks */ = {
+		4A41156145A0A63E262C65EE689FDE8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23A8BAD4B4D32BF795796A5C0234D8A /* Foundation.framework in Frameworks */,
+				8E73413A954925DCF918AA838E184246 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6803615CE487BF5E8BEA0088F9D62AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE220474909A61EAB8D3EB334ECAFB19 /* Foundation.framework in Frameworks */,
+				1E6399CF47CDA1BB4201B43B4260EEE5 /* SafariServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38978AF1FD3AFBDBCD6AC3CDEB8BCB58 /* Targets Support Files */ = {
+		0BCEED5C069D316CA4343CC4AECC921F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E7A1801B6193DA0578F59CF400ABB01 /* Pods-LinkedInTest */,
+				F0194A6979763CC4DD33C710836B7894 /* p2.OAuth2 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9668B8798FCA7ED565F1B3F2044CCCA3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		331802BB430520477C1D90AECEC256EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D7BF627F31F4D43E065553229C7AC46 /* p2.OAuth2.modulemap */,
+				B443B984D969C057688DE7878EB7AC35 /* p2.OAuth2.xcconfig */,
+				AF169418E7F278F2FF055FD5B435EC66 /* p2.OAuth2-dummy.m */,
+				DF4185BE439AF8AAFACB66DF59414D3E /* p2.OAuth2-Info.plist */,
+				BADBC5B6B57434966B66F95D1829F8F2 /* p2.OAuth2-prefix.pch */,
+				89D71B27287CF54EAF2DB408351B41CD /* p2.OAuth2-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/p2.OAuth2";
+			sourceTree = "<group>";
+		};
+		360FF8648837B261ABC195A9E1864E88 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54A2B03F85EB0442A6DDC6FB5B853CBA /* Pods-LinkedInTest */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6F93F2855310A974E4CF1054A4FD37C7 /* Products */ = {
+		52FD0DE80C3A654DFE2B1449A9BFD59B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58AB433D1A1FF34D675653B9FFD3DC00 /* Pods_LinkedInTest.framework */,
+				FE408F721C71F1A18A29E3DE67F8C285 /* p2_OAuth2.framework */,
+				A994D4C663ADA1B7E4DC133177C28996 /* Pods_LinkedInTest.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+		54A2B03F85EB0442A6DDC6FB5B853CBA /* Pods-LinkedInTest */ = {
 			isa = PBXGroup;
 			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		9E7A1801B6193DA0578F59CF400ABB01 /* Pods-LinkedInTest */ = {
-			isa = PBXGroup;
-			children = (
-				78320CBA9A9F4B5C2275D8AFE2DD406A /* Pods-LinkedInTest.modulemap */,
-				D8C78E97043DCF5B09F892EFE954399C /* Pods-LinkedInTest-acknowledgements.markdown */,
-				482D17D21AADFF7C2E3EB17A0D0CC0A0 /* Pods-LinkedInTest-acknowledgements.plist */,
-				4B843A0531F40F8A3D5D0F7EB3CE617B /* Pods-LinkedInTest-dummy.m */,
-				45CAAB781FF3A7B19771953A569AE21D /* Pods-LinkedInTest-Info.plist */,
-				D86DB6F6D5438653A3279A8EB2BAB0D8 /* Pods-LinkedInTest-umbrella.h */,
-				50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */,
-				FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */,
+				41AD99B4969BCADE4B8B0181849DCAEF /* Pods-LinkedInTest.modulemap */,
+				38DD25D3AB7577293F81F91786B9DC5F /* Pods-LinkedInTest-acknowledgements.markdown */,
+				69C4CAD22C7FBA6C938FEC2BF5BB36A7 /* Pods-LinkedInTest-acknowledgements.plist */,
+				26CE4C1F889473C82672A7BBAEBF3EE0 /* Pods-LinkedInTest-dummy.m */,
+				6C27928C31B55B700163F46E737D0037 /* Pods-LinkedInTest-frameworks.sh */,
+				ACECBEDABFF80BD9FC16278679A343B0 /* Pods-LinkedInTest-Info.plist */,
+				3848D877BD06F7057AC1F96CD5C4D4F6 /* Pods-LinkedInTest-umbrella.h */,
+				1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */,
+				B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */,
 			);
 			name = "Pods-LinkedInTest";
 			path = "Target Support Files/Pods-LinkedInTest";
+			sourceTree = "<group>";
+		};
+		9668B8798FCA7ED565F1B3F2044CCCA3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F296C01FFACA80FDE3AE236F23425680 /* Foundation.framework */,
+				CC1DBA4BEF549DC1A178F03A8D9ACE2A /* SafariServices.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6F93F2855310A974E4CF1054A4FD37C7 /* Products */,
-				38978AF1FD3AFBDBCD6AC3CDEB8BCB58 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				0BCEED5C069D316CA4343CC4AECC921F /* Pods */,
+				52FD0DE80C3A654DFE2B1449A9BFD59B /* Products */,
+				360FF8648837B261ABC195A9E1864E88 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		F0194A6979763CC4DD33C710836B7894 /* p2.OAuth2 */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				DF5EAFEC24AAC5F3EA791926C15F57A0 /* extensions.swift */,
+				B939BA953115327FB1A9C5A3F364FFB6 /* Keychain.swift */,
+				3257CECF9FECF5A37A2A42AB3A38D51B /* OAuth2.swift */,
+				D85E66C0BBAF08ADA852BB8EBA43A50C /* OAuth2AuthConfig.swift */,
+				B9D1196769267E301F10F264013593CB /* OAuth2Authorizer+iOS.swift */,
+				7416BC51ED22FEDEDDEE58FEA79262EE /* OAuth2AuthorizerUI.swift */,
+				E8C3EE7F749D753366595D4DA7BA19D7 /* OAuth2AuthRequest.swift */,
+				059AA98378056BAC79D6015F3E898B9B /* OAuth2Base.swift */,
+				F7927DDB2AB71D75521A70EF1FD2F8D1 /* OAuth2ClientConfig.swift */,
+				52CCC0B4D7D0A9EAC47D1C2E7AE49DB1 /* OAuth2ClientCredentials.swift */,
+				E188B1F466C93168908501FCF92789B4 /* OAuth2ClientCredentialsReddit.swift */,
+				2AF89395E1F042D20B91335E9997A5FF /* OAuth2CodeGrant.swift */,
+				4847D45F646AB050411C26602C31857A /* OAuth2CodeGrantAzure.swift */,
+				92BA28DE66F5FAA76A9F975027FDD122 /* OAuth2CodeGrantBasicAuth.swift */,
+				A3CCB36E7DEA2E66449B98DA6E826C82 /* OAuth2CodeGrantFacebook.swift */,
+				D72F1A82E058CA931641921F12C3F837 /* OAuth2CodeGrantLinkedIn.swift */,
+				B4C636DB7F02755ED42EF4DC29E7A34F /* OAuth2CodeGrantNoTokenType.swift */,
+				43627D6CA44CD610CC98E3B7086772A6 /* OAuth2CustomAuthorizer+iOS.swift */,
+				490C41A2E7CB7DCC4401EC7834A7B76A /* OAuth2CustomAuthorizerUI.swift */,
+				16A4C14AE590F2111FF5179D5E7F9609 /* OAuth2DataLoader.swift */,
+				62782A697A70FB8536F0618760895595 /* OAuth2DataLoaderSessionTaskDelegate.swift */,
+				7F0DD63CFB70156DFAE23F5D6D9D6D45 /* OAuth2DataRequest.swift */,
+				72E5B180C627A307263A33CB95E96CC0 /* OAuth2DebugURLSessionDelegate.swift */,
+				0022468C1F6991E061C5356F11E0C50D /* OAuth2DynReg.swift */,
+				8032D3CE990B4C8A806083332B091BCB /* OAuth2Error.swift */,
+				471A9F529F44287B2AC0DFD863868B2E /* OAuth2ImplicitGrant.swift */,
+				821FFF01A19FD5EE705D32D503F79671 /* OAuth2ImplicitGrantWithQueryParams.swift */,
+				98E046BE5ACB99BF3C03BB4202C299B0 /* OAuth2KeychainAccount.swift */,
+				D23A279A596C62BC25DDECE8BE7670A6 /* OAuth2Logger.swift */,
+				0D70E3A0BDBC7F0AB5E1844068824786 /* OAuth2PasswordGrant.swift */,
+				811008C8DF316096FE014E45CC16D61C /* OAuth2Requestable.swift */,
+				EE5BD224FEB470A3AD4D499404D621D7 /* OAuth2RequestPerformer.swift */,
+				E8235B6C7853BC1748125524D05304AF /* OAuth2Response.swift */,
+				D3C24D728DD72D7C123CC615ECE89ADE /* OAuth2Securable.swift */,
+				CDB6C20BA63C0DEFFE734CAD47F4EF58 /* OAuth2WebViewController.swift */,
+				331802BB430520477C1D90AECEC256EB /* Support Files */,
 			);
-			name = Frameworks;
+			name = p2.OAuth2;
+			path = p2.OAuth2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DD8843E52628B6971BE54E1B32752BAF /* Headers */ = {
+		2B104C0358C576925E6A8E44933E2188 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B66310214CBD65FAFDB2EE74B1B9D44B /* Pods-LinkedInTest-umbrella.h in Headers */,
+				C885BA62674BEA5A75B883BA88E04546 /* p2.OAuth2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80A2BC6146BD55064282AAAD64F0891 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988104325C90C4F4D2AD387418C68DFA /* Pods-LinkedInTest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5BB24CC8FE4A433DD32A609E6E9B6753 /* Pods-LinkedInTest */ = {
+		33BE2696881F10797430DAD840F12E6E /* Pods-LinkedInTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 926BDBB7B682BD1AEFE044E77FFF350D /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */;
+			buildConfigurationList = 7548BA2D618B04409E1FCD980A5B6B1C /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */;
 			buildPhases = (
-				DD8843E52628B6971BE54E1B32752BAF /* Headers */,
-				78A44A45E252BD89DA4BCA8FC6A7BD49 /* Sources */,
-				4EFB753810D5F0A37CA557435E19395E /* Frameworks */,
-				C396CEBFBD1315268C363712CFC8BBB7 /* Resources */,
+				A80A2BC6146BD55064282AAAD64F0891 /* Headers */,
+				C629953292E134B2DE5AA791D800347C /* Sources */,
+				4A41156145A0A63E262C65EE689FDE8B /* Frameworks */,
+				0EBAD6B4D283464B5FECD2BD914A1093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342039572CB8F5AEA9A99CBFEBAD4FC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-LinkedInTest";
+			productName = "Pods-LinkedInTest";
+			productReference = A994D4C663ADA1B7E4DC133177C28996 /* Pods_LinkedInTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97DDEE5A1EB31FDE74A84A2AE12EFAC8 /* p2.OAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C36C3C130B01613AA22A9CE8ABFB9367 /* Build configuration list for PBXNativeTarget "p2.OAuth2" */;
+			buildPhases = (
+				2B104C0358C576925E6A8E44933E2188 /* Headers */,
+				5043272FCA7DC8C4F64DF0912BC6768C /* Sources */,
+				6803615CE487BF5E8BEA0088F9D62AEA /* Frameworks */,
+				8848FE6137F51BD4B089277B98204DC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-LinkedInTest";
-			productName = "Pods-LinkedInTest";
-			productReference = 58AB433D1A1FF34D675653B9FFD3DC00 /* Pods_LinkedInTest.framework */;
+			name = p2.OAuth2;
+			productName = p2.OAuth2;
+			productReference = FE408F721C71F1A18A29E3DE67F8C285 /* p2_OAuth2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -145,17 +344,25 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6F93F2855310A974E4CF1054A4FD37C7 /* Products */;
+			productRefGroup = 52FD0DE80C3A654DFE2B1449A9BFD59B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BB24CC8FE4A433DD32A609E6E9B6753 /* Pods-LinkedInTest */,
+				97DDEE5A1EB31FDE74A84A2AE12EFAC8 /* p2.OAuth2 */,
+				33BE2696881F10797430DAD840F12E6E /* Pods-LinkedInTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C396CEBFBD1315268C363712CFC8BBB7 /* Resources */ = {
+		0EBAD6B4D283464B5FECD2BD914A1093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8848FE6137F51BD4B089277B98204DC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -165,95 +372,70 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		78A44A45E252BD89DA4BCA8FC6A7BD49 /* Sources */ = {
+		5043272FCA7DC8C4F64DF0912BC6768C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BFC966E1A449529ADE20CD1FD23663 /* Pods-LinkedInTest-dummy.m in Sources */,
+				8B497C4136C2FC6CD940D12DF9189816 /* extensions.swift in Sources */,
+				451DD2451949A63F2362E963E0D674F4 /* Keychain.swift in Sources */,
+				3ABBB12BAC3F7BE81DA7C13C2555FED4 /* OAuth2.swift in Sources */,
+				0DB19FFD0E012313DD4C5AAF7062E9EA /* OAuth2AuthConfig.swift in Sources */,
+				B09FE0C8D40B7A5C7001E5F45D4BAE67 /* OAuth2Authorizer+iOS.swift in Sources */,
+				DCB37258AF28EE946EBC17E3C8CBEEA8 /* OAuth2AuthorizerUI.swift in Sources */,
+				D23C19377FDC8BB636701E84A7BA15C5 /* OAuth2AuthRequest.swift in Sources */,
+				366B55484B806C602404D09F6BBDEE22 /* OAuth2Base.swift in Sources */,
+				CD534A6BD70FE521A73A130076773D41 /* OAuth2ClientConfig.swift in Sources */,
+				2C2F3D81B5A19BF4D9398EB4D14554E0 /* OAuth2ClientCredentials.swift in Sources */,
+				CD06C250DFC66E9BE6258D4E10A09E88 /* OAuth2ClientCredentialsReddit.swift in Sources */,
+				6E824F5EAA97629598899D48E72635F1 /* OAuth2CodeGrant.swift in Sources */,
+				83D538E0789E4D642E165D2A1DB8D6C4 /* OAuth2CodeGrantAzure.swift in Sources */,
+				30126A4CB48E290DFB2740F3FC65EDB2 /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				98861163901029F9D3246570B1513D83 /* OAuth2CodeGrantFacebook.swift in Sources */,
+				DED135B1C0376A1F1F88118D5F7E0FD2 /* OAuth2CodeGrantLinkedIn.swift in Sources */,
+				C94A139FACE1ED6CE637E9BB57D6CC04 /* OAuth2CodeGrantNoTokenType.swift in Sources */,
+				EB31BACB499B0700DAD44041124AD116 /* OAuth2CustomAuthorizer+iOS.swift in Sources */,
+				7B2FB63C83EB5CC40411858E19A695B3 /* OAuth2CustomAuthorizerUI.swift in Sources */,
+				BE80786903DB42E55CEE4EE57661778B /* OAuth2DataLoader.swift in Sources */,
+				80A74090DE0BC1BA68F1801E82AEC94E /* OAuth2DataLoaderSessionTaskDelegate.swift in Sources */,
+				D6BCB7C5BB93202B685AECEDA665F1D2 /* OAuth2DataRequest.swift in Sources */,
+				A48856A6243DD3143874ABF8B7F76BD3 /* OAuth2DebugURLSessionDelegate.swift in Sources */,
+				104C0C323984E398CA2C99A1F4764840 /* OAuth2DynReg.swift in Sources */,
+				D5D0F2D2EF92951237989FE0A12D5079 /* OAuth2Error.swift in Sources */,
+				27BE287CFACBB30393DCE7144B09F5DE /* OAuth2ImplicitGrant.swift in Sources */,
+				6267B2DF96FA4467E4780157F6FBB8D8 /* OAuth2ImplicitGrantWithQueryParams.swift in Sources */,
+				E362CD4203E45B49103608DCA3A90D9C /* OAuth2KeychainAccount.swift in Sources */,
+				9426766C8E638799A89F313267ECCDD9 /* OAuth2Logger.swift in Sources */,
+				9F8C523468EF2F7399DEA7FB743A89F4 /* OAuth2PasswordGrant.swift in Sources */,
+				9DE41D2C67FF2ABA9B8E40D63B37A148 /* OAuth2Requestable.swift in Sources */,
+				D7BC341F969470869BEE61756FA642F3 /* OAuth2RequestPerformer.swift in Sources */,
+				25EA4DE129C28557BC5C4E1B35248C43 /* OAuth2Response.swift in Sources */,
+				B4A089DAD28DB57F48EAB7FE04958A45 /* OAuth2Securable.swift in Sources */,
+				E9A7FB86A4EC39F9FEAD8683527730F1 /* OAuth2WebViewController.swift in Sources */,
+				598243B4413B2DA6278DD6D3FCD41A2A /* p2.OAuth2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C629953292E134B2DE5AA791D800347C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BBEF2A510E52F3D1B3B981BAD620CF9 /* Pods-LinkedInTest-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		342039572CB8F5AEA9A99CBFEBAD4FC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = p2.OAuth2;
+			target = 97DDEE5A1EB31FDE74A84A2AE12EFAC8 /* p2.OAuth2 */;
+			targetProxy = 75CB2ED43745B6F6EF1333086F3A0694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4CF7AC703D5FDD8AF358AF441A29960A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEE459A6B1A2D3112596915B960780A1 /* Pods-LinkedInTest.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8666C6540FCCF7142ADF1B1BEEAA6F96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50D36ABC1631D41551E167A44CDCE2BB /* Pods-LinkedInTest.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,7 +495,44 @@
 			};
 			name = Release;
 		};
-		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+		1B200EAEBB6A70925618AB65D015983F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2CBD9FD87B55485308E92716911E0C /* Pods-LinkedInTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -364,7 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -377,23 +596,141 @@
 			};
 			name = Debug;
 		};
+		5F0D305558AA5B82536D05D2528DD708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B443B984D969C057688DE7878EB7AC35 /* p2.OAuth2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/p2.OAuth2/p2.OAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2.modulemap";
+				PRODUCT_MODULE_NAME = p2_OAuth2;
+				PRODUCT_NAME = p2_OAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6AF64BCA6B32CCF48751BCF7608774AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B497E3228067FA65AE5A34A5C253977E /* Pods-LinkedInTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F263EC75DEC286C52F536B886CC5E476 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B443B984D969C057688DE7878EB7AC35 /* p2.OAuth2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/p2.OAuth2/p2.OAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2.modulemap";
+				PRODUCT_MODULE_NAME = p2_OAuth2;
+				PRODUCT_NAME = p2_OAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C1391485F05B41BD35738A433056B7FA /* Debug */,
-				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		926BDBB7B682BD1AEFE044E77FFF350D /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */ = {
+		7548BA2D618B04409E1FCD980A5B6B1C /* Build configuration list for PBXNativeTarget "Pods-LinkedInTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8666C6540FCCF7142ADF1B1BEEAA6F96 /* Debug */,
-				4CF7AC703D5FDD8AF358AF441A29960A /* Release */,
+				1B200EAEBB6A70925618AB65D015983F /* Debug */,
+				6AF64BCA6B32CCF48751BCF7608774AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36C3C130B01613AA22A9CE8ABFB9367 /* Build configuration list for PBXNativeTarget "p2.OAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0D305558AA5B82536D05D2528DD708 /* Debug */,
+				F263EC75DEC286C52F536B886CC5E476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
