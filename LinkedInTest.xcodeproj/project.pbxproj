@@ -24,6 +24,7 @@
 		D336F4D3225FE14B00C449B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D336F4D6225FE14B00C449B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D336F4D8225FE14B00C449B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F6C4CA2262465F0085CA20 /* LinkedInTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkedInTest.entitlements; sourceTree = "<group>"; };
 		EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.debug.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.release.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +55,6 @@
 				EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */,
 				F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +79,7 @@
 		D336F4CB225FE14A00C449B4 /* LinkedInTest */ = {
 			isa = PBXGroup;
 			children = (
+				E8F6C4CA2262465F0085CA20 /* LinkedInTest.entitlements */,
 				D336F4CC225FE14A00C449B4 /* AppDelegate.swift */,
 				D336F4CE225FE14A00C449B4 /* ViewController.swift */,
 				D336F4D0225FE14A00C449B4 /* Main.storyboard */,
@@ -123,6 +124,11 @@
 				TargetAttributes = {
 					D336F4C8225FE14A00C449B4 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -357,14 +363,15 @@
 			baseConfigurationReference = EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkedInTest/LinkedInTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83RSK9A39T;
+				DEVELOPMENT_TEAM = 34KYDAX9KC;
 				INFOPLIST_FILE = LinkedInTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jp4mobile.LinkedInTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp4mobile.linkedinjp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,14 +383,15 @@
 			baseConfigurationReference = F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LinkedInTest/LinkedInTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83RSK9A39T;
+				DEVELOPMENT_TEAM = 34KYDAX9KC;
 				INFOPLIST_FILE = LinkedInTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jp4mobile.LinkedInTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jp4mobile.linkedinjp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

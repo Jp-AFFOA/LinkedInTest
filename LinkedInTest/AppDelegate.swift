@@ -6,6 +6,7 @@
 //  Copyright © 2019 Jp LaFond. All rights reserved.
 //
 
+import p2_OAuth2
 import UIKit
 
 @UIApplicationMain
@@ -41,6 +42,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("*Jp* url <\(url)> options <\(options)>")
+        return true
+    }
+
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        print("*Jp* userActivity <\(userActivity)> URL <\(String(describing: userActivity.webpageURL))> type <\(userActivity.activityType)>")
+        return false
+    }
 
 }
 
