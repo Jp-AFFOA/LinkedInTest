@@ -13,6 +13,7 @@
 		D336F4D2225FE14A00C449B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D336F4D0225FE14A00C449B4 /* Main.storyboard */; };
 		D336F4D4225FE14B00C449B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D336F4D3225FE14B00C449B4 /* Assets.xcassets */; };
 		D336F4D7225FE14B00C449B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D336F4D5225FE14B00C449B4 /* LaunchScreen.storyboard */; };
+		D3B54AC4226625EB00090F85 /* OAuth2Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B54AC3226625EB00090F85 /* OAuth2Wrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D336F4D3225FE14B00C449B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D336F4D6225FE14B00C449B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D336F4D8225FE14B00C449B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B54AC3226625EB00090F85 /* OAuth2Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Wrapper.swift; sourceTree = "<group>"; };
 		E8F6C4CA2262465F0085CA20 /* LinkedInTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkedInTest.entitlements; sourceTree = "<group>"; };
 		EF5A7B8C49D42168D905EDB3 /* Pods-LinkedInTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.debug.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F53C762E6D4ED963D9C0AC6E /* Pods-LinkedInTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedInTest.release.xcconfig"; path = "Target Support Files/Pods-LinkedInTest/Pods-LinkedInTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				E8F6C4CA2262465F0085CA20 /* LinkedInTest.entitlements */,
 				D336F4CC225FE14A00C449B4 /* AppDelegate.swift */,
 				D336F4CE225FE14A00C449B4 /* ViewController.swift */,
+				D3B54AC3226625EB00090F85 /* OAuth2Wrapper.swift */,
 				D336F4D0225FE14A00C449B4 /* Main.storyboard */,
 				D336F4D3225FE14B00C449B4 /* Assets.xcassets */,
 				D336F4D5225FE14B00C449B4 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				D336F4CF225FE14A00C449B4 /* ViewController.swift in Sources */,
 				D336F4CD225FE14A00C449B4 /* AppDelegate.swift in Sources */,
+				D3B54AC4226625EB00090F85 /* OAuth2Wrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,11 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         print("*Jp* url <\(url)> options <\(options)>")
+        OAuth2Wrapper.shared.oauth2.handleRedirectURL(url)
         return true
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         print("*Jp* userActivity <\(userActivity)> URL <\(String(describing: userActivity.webpageURL))> type <\(userActivity.activityType)>")
+        if let url = userActivity.webpageURL {
+            OAuth2Wrapper.shared.oauth2.handleRedirectURL(url)
+            print("*Jp* accessToken <\(OAuth2Wrapper.shared.oauth2.accessToken ?? "*nil*")>")
+            print("*Jp* refreshToken <\(OAuth2Wrapper.shared.oauth2.refreshToken ?? "*nil*")>")
+            return OAuth2Wrapper.shared.oauth2.accessToken != nil
+        }
         return false
     }
 

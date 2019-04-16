@@ -33,31 +33,26 @@ class ViewController: UIViewController {
     }
 
     private func triggerOAuth() {
-        let oauth2 = OAuth2CodeGrant(settings: [
-            "client_id": "86wgy3rfgw3d32",
-            "client_secret": "C7447242",
-            "authorize_uri": "https://www.linkedin.com/oauth/v2/authorization",
-            "token_uri": "https://www.linkedin.com/oauth/v2/accessToken",   // code grant only
-//            "redirect_uris": ["Jp4Mobile://redirect/test-page"],
-            "redirect_uris": ["https://www.jp4mobile.com/redirect/test-page"],
-            "scope": "r_liteprofile%20r_emailaddress%20w_members_social",
-            "secret_in_body": false,
-            "keychain": false,         // if you DON'T want keychain integration
-            ] as OAuth2JSON)
-//        oauth2.authConfig.authorizeEmbedded = true
-//        oauth2.authConfig.authorizeContext = self
-        oauth2.authConfig.authorizeEmbedded = true
-        oauth2.authConfig.authorizeContext = self
-        oauth2.logger = OAuth2DebugLogger(.trace)
+//        OAuth2Wrapper.shared.oauth2.authConfig.authorizeEmbedded = true
+        OAuth2Wrapper.shared.oauth2.authConfig.authorizeContext = self
         let base = URL(string: "https://api.linkedin.com")!
         let url = base.appendingPathComponent("v2/me")
 
         // https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={your_client_id}&redirect_uri=https%3A%2F%2Fdev.example.com%2Fauth%2Flinkedin%2Fcallback&state=fooobar&scope=r_liteprofile%20r_emailaddress%20w_member_social
 
-        var req = oauth2.request(forURL: url)
-        req.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
+//        OAuth2Wrapper.shared.oauth2.authorize() { authParameters, error in
+//            if let params = authParameters {
+//                print("*Jp* Authorized! accessToken: <\(OAuth2Wrapper.shared.oauth2.accessToken ?? "*nil*")>")
+//                print("*Jp* Authorized! additional params <\(params)>")
+//            } else {
+//                print("*Jp* Authorization problem <\(String(describing: error))>")
+//            }
+//        }
 
-        self.loader = OAuth2DataLoader(oauth2: oauth2)
+        let req = OAuth2Wrapper.shared.oauth2.request(forURL: url)
+//        req.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
+
+        self.loader = OAuth2DataLoader(oauth2: OAuth2Wrapper.shared.oauth2)
         loader?.perform(request: req) { response in
             do {
                 let dict = try response.responseJSON()
