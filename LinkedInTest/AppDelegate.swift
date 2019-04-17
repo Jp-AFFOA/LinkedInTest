@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        print("*Jp* userActivity <\(userActivity)> URL <\(String(describing: userActivity.webpageURL))> type <\(userActivity.activityType)>")
+        print("*Jp* userActivity <\(userActivity)> URL <\(String(describing: userActivity.webpageURL))> type <\(userActivity.activityType)> referrer <\(userActivity.referrerURL)>")
         if let url = userActivity.webpageURL {
             OAuth2Wrapper.shared.oauth2.handleRedirectURL(url)
             print("*Jp* accessToken <\(OAuth2Wrapper.shared.oauth2.accessToken ?? "*nil*")>")

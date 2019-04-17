@@ -21,8 +21,8 @@ class OAuth2Wrapper {
             "authorize_uri": "https://www.linkedin.com/oauth/v2/authorization",
             "token_uri": "https://www.linkedin.com/oauth/v2/accessToken",   // code grant only
             "redirect_uris": ["https://www.jp4mobile.com/redirect/test-page"],
-//            "scope": "r_liteprofile r_emailaddress w_member_social",
-            "scope": "r_fullprofile r_emailaddress w_member_social",
+            "scope": "r_liteprofile r_emailaddress w_member_social",
+//            "scope": "r_fullprofile r_emailaddress w_member_social",
             "keychain": false,         // if you DON'T want keychain integration
             ] as OAuth2JSON)
         oauth2.logger = OAuth2DebugLogger(.trace)
